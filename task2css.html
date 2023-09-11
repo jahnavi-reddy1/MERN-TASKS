@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.vertical {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.v a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.v a.active {
+  background-color: orange;
+  color: white;
+}
+
+.v a:hover:not(.active) {
+  background-color: lightblue;
+  color: white;
+}
+.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+.h {
+  float: left;
+}
+
+.h a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.h a:hover {
+  background-color: darkgrey;
+}
+</style>
+</head>
+<body>
+<table>
+    <h2>Vertical Navigation Bar</h2>
+    <tr>
+
+
+<ul class="vertical">
+  <li class="v"><a class="active" href="#home">Home</a></li>
+  <li class="v"><a href="#Java">Java</a></li>
+  <li class="v"><a href="#CSS">CSS</a></li>
+  <li class="v"><a href="#HTML">HTML</a></li>
+  <li class="v"><a href="#Bootstraps">Bootsraps</a></li>
+</ul></tr>
+<h2>Horizontal Navigation Bar</h2>
+<tr>
+    <ul class="horizontal">
+        <li class="h"><a class="active" href="#home">Home</a></li>
+        <li class="h"><a href="#Java">Java</a></li>
+        <li class="h"><a href="#CSS">CSS</a></li>
+        <li class="h"><a href="#HTML">HTML</a></li>
+        
+      </ul>
+</tr>
+</table>
+</body>
+</html>
+
+
